@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitFusion Wellness</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .member-card img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(72, 187, 120, 0.4);
+    }
+    .member-card img {
+      transition: all 0.3s ease;
+    }
+    .fade-in {
+      animation: fadeIn 1.5s ease-in-out forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-green-600">FitFusion Wellness</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#home" class="hover:text-green-500">Home</a></li>
+          <li><a href="#about" class="hover:text-green-500">About</a></li>
+          <li><a href="#founders" class="hover:text-green-500">Founders</a></li>
+          <li><a href="#services" class="hover:text-green-500">Services</a></li>
+          <li><a href="#contact" class="hover:text-green-500">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Welcome to FitFusion Wellness</h2>
+      <p class="text-lg mb-8">Your one-stop platform for personalized fitness and nutrition plans.</p>
+      <a href="#services" class="inline-block bg-green-600 text-white px-8 py-3 rounded-full font-medium hover:bg-green-700 transition">Get Started</a>
+    </div>
+  </section>
+
+  <section id="about" class="py-16 bg-white">
+    <div class="container mx-auto px-6 md:flex md:items-center">
+      <div class="md:w-1/2 mb-6 md:mb-0">
+        <h3 class="text-3xl font-bold mb-4">About Us</h3>
+        <p class="text-gray-700 leading-relaxed">
+          FitFusion Wellness was founded by a passionate and dynamic team committed to promoting holistic health and well-being. Divya, with her strong background in pharmacy and nutrition, leads the wellness and health initiatives. Bhavani and Shivamani, both tech enthusiasts, drive the digital presence and technological innovation, ensuring the platform reaches and supports a wide audience effectively.
+        </p>
+      </div>
+      <!-- <div class="md:w-1/2">
+        <img src="https://via.placeholder.com/400x300" alt="Team working" class="rounded-xl shadow-lg mx-auto" />
+      </div> -->
+    </div>
+  </section>
+
+  <section id="team" class="py-16 bg-white">
+  <div class="container mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold mb-12">Meet the Team</h3>
+    
+    <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-8">
+      
+      <!-- Shivamani -->
+      <div class="bg-gray-100 p-6 rounded-2xl shadow-md w-64">
+        <h4 class="font-semibold text-xl mb-2">Shivamani</h4>
+        <p class="text-gray-600">Co-Founder & Tech Expert</p>
+      </div>
+
+      <!-- Divya -->
+      <div class="bg-gray-100 p-6 rounded-2xl shadow-md w-64">
+        <h4 class="font-semibold text-xl mb-2">Divya</h4>
+        <p class="text-gray-600">Nutritionist</p>
+      </div>
+
+      <!-- Bhavani -->
+      <div class="bg-gray-100 p-6 rounded-2xl shadow-md w-64">
+        <h4 class="font-semibold text-xl mb-2">Bhavani</h4>
+        <p class="text-gray-600">Fitness Expert</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <section id="services" class="py-16">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-8">Our Services</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-2xl shadow-lg">
+          <h4 class="text-xl font-semibold mb-2">Personalized Nutrition</h4>
+          <p>Custom meal plans designed for your goals, including PCOS/PCOD diets.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-lg">
+          <h4 class="text-xl font-semibold mb-2">Workout Plans</h4>
+          <p>Workout routines tailored to your fitness level and objectives.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-lg">
+          <h4 class="text-xl font-semibold mb-2">Wellness Community</h4>
+          <p>Join a supportive community to stay motivated and share progress.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Patient Form Section -->
+  <section id="patient-form" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-8">Patient Details Form</h3>
+      <form action="https://formsubmit.co/maxrudra123@gmail.com" method="POST" class="max-w-xl mx-auto bg-gray-100 p-6 rounded-lg shadow-md space-y-4">
+        <div>
+          <label for="name" class="block font-medium mb-1">Name</label>
+          <input type="text" id="name" name="name" required class="w-full p-2 border rounded">
+        </div>
+        <div>
+          <label for="age" class="block font-medium mb-1">Age</label>
+          <input type="number" id="age" name="age" required class="w-full p-2 border rounded">
+        </div>
+        <div>
+          <label for="gender" class="block font-medium mb-1">Gender</label>
+          <select id="gender" name="gender" required class="w-full p-2 border rounded">
+            <option value="">Select</option>
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="goal" class="block font-medium mb-1">Health Goal</label>
+          <textarea id="goal" name="goal" rows="4" class="w-full p-2 border rounded" placeholder="e.g., weight loss, PCOS diet, muscle gain..." required></textarea>
+        </div>
+        <button type="submit" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 transition">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="contact" class="py-16 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-4">Get in Touch</h3>
+      <p class="mb-6">Have questions or want to know more? Reach out to us!</p>
+      <a href="mailto:info@fitfusion.com" class="inline-block bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition">Email Us</a>
+    </div>
+  </section>
+    <!-- Team content -->
+</section>
+
+<!-- 👇 Paste the new modules code here -->
+<section id="modules" class="py-16 bg-gray-50">
+  <div class="container mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold mb-12">Our New Features</h3>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
+      <!-- Lunch Box Planner -->
+      <div class="bg-white p-8 rounded-2xl shadow-lg text-left">
+        <h4 class="text-2xl font-semibold mb-4 flex items-center gap-2">
+          🍱 Lunch Box Planner
+        </h4>
+        <p class="text-gray-700 mb-4">
+          Plan nutritious, goal-oriented meals for work, school, or workouts...
+        </p>
+        <ul class="list-disc list-inside text-gray-600">
+          <li>Personalized weekly lunch plans</li>
+          <li>Grocery list generator</li>
+          <li>Meal prep and storage tips</li>
+          <li>Supports PCOS, keto, vegan, and more</li>
+        </ul>
+      </div>
+
+      <!-- Schedule Call -->
+      <div class="bg-white p-8 rounded-2xl shadow-lg text-left">
+        <h4 class="text-2xl font-semibold mb-4 flex items-center gap-2">
+          📞 Schedule a Call with Nutritionist
+        </h4>
+        <p class="text-gray-700 mb-4">
+          Book a one-on-one consultation with our certified nutritionist...
+        </p>
+        <button onclick="document.getElementById('callModal').classList.remove('hidden')" 
+  class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+  Book a Call
+</button>
+<ul class="list-disc list-inside text-gray-600">
+          <li>Real-time calendar bookings</li>
+          <li>Goal-based intake form</li>
+          <li>Video/audio call options</li>
+          <li>Follow-up and reminders</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="callModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+  <div class="bg-white p-6 rounded-lg w-full max-w-md text-left shadow-xl">
+    <h3 class="text-xl font-bold mb-4">Schedule a Call</h3>
+    <form>
+      <label class="block mb-2">Your Name</label>
+      <input type="text" class="w-full border border-gray-300 p-2 rounded mb-4" placeholder="Enter your name" />
+
+      <label class="block mb-2">Email</label>
+      <input type="email" class="w-full border border-gray-300 p-2 rounded mb-4" placeholder="Enter your email" />
+
+      <label class="block mb-2">Preferred Time</label>
+      <input type="datetime-local" class="w-full border border-gray-300 p-2 rounded mb-4" />
+
+      <div class="flex justify-end gap-2">
+        <button type="button" onclick="document.getElementById('callModal').classList.add('hidden')" 
+          class="px-4 py-2 bg-gray-300 rounded">Cancel</button>
+        <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+</section>
+
+ <!-- Categories -->
+  <section class="p-10">
+    <h2 class="text-2xl font-semibold mb-6 text-center">Choose Your Goal</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="bg-green-50 p-4 rounded-xl text-center shadow">🏋️‍♂️ Muscle Gain</div>
+      <div class="bg-green-50 p-4 rounded-xl text-center shadow">⚖️ Weight Loss</div>
+      <div class="bg-green-50 p-4 rounded-xl text-center shadow">🩺 PCOS/PCOD</div>
+      <div class="bg-green-50 p-4 rounded-xl text-center shadow">🧘 Wellness</div>
+    </div>
+  </section>
+
+  <!-- Recipes Section -->
+  <section class="bg-gray-50 p-10">
+    <h2 class="text-2xl font-semibold mb-6 text-center">Featured Recipes</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white p-4 rounded-lg shadow">
+        <!-- <img src="https://source.unsplash.com/400x300/?salad" alt="Quinoa Salad" class="rounded mb-4"> -->
+        <h3 class="font-bold text-lg mb-2">Quinoa Salad</h3>
+        <p>High-protein and fiber-rich meal ideal for weight loss and energy.</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow">
+        <!-- <img src="https://source.unsplash.com/400x300/?smoothie" alt="Oats Smoothie" class="rounded mb-4"> -->
+        <h3 class="font-bold text-lg mb-2">Oats Smoothie</h3>
+        <p>Perfect breakfast smoothie for PCOS/PCOD and overall gut health.</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow">
+        <!-- <img src="https://source.unsplash.com/400x300/?grilled-chicken" alt="Grilled Chicken" class="rounded mb-4"> -->
+        <h3 class="font-bold text-lg mb-2">Grilled Chicken Meal Prep</h3>
+        <p>Lean protein-packed meal for muscle gain and active lifestyles.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nutrition Tips -->
+  <section class="p-10">
+    <h2 class="text-2xl font-semibold mb-6 text-center">Nutrition Tips</h2>
+    <ul class="list-disc list-inside max-w-2xl mx-auto text-gray-700">
+      <li>Eat every 3–4 hours to maintain energy levels.</li>
+      <li>Hydrate with 2–3L of water daily.</li>
+      <li>Include protein in every meal to aid muscle recovery.</li>
+      <li>Avoid refined sugar and processed foods.</li>
+    </ul>
+  </section>
+
+  <!-- Custom Diet Plan Form -->
+  <section class="bg-green-50 p-10">
+    <h2 class="text-2xl font-semibold mb-4 text-center">Get Your Custom Diet Plan</h2>
+    <form class="max-w-xl mx-auto space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full border p-3 rounded">
+      <input type="email" placeholder="Email Address" class="w-full border p-3 rounded">
+      <select class="w-full border p-3 rounded">
+        <option>Select Your Goal</option>
+        <option>Weight Loss</option>
+        <option>Muscle Gain</option>
+        <option>PCOS/PCOD</option>
+        <option>General Wellness</option>
+      </select>
+      <button type="submit" class="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700">Submit</button>
+    </form>
+  </section>
+  <section id="team" class="py-16 bg-white">
+
+
+  <footer class="bg-gray-200 py-6">
+    <div class="container mx-auto px-6 text-center text-gray-700">
+      &copy; 2025 FitFusion Wellness. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>

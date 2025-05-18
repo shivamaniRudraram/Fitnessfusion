@@ -1,0 +1,58 @@
+/* Body and general font */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f4f7f6; /* softer light background */
+  margin: 0;
+  padding: 0;
+  color: #2c3e50; /* dark slate for text */
+}
+
+/* Header styles */
+header {
+  background: #2f855a; /* greenish teal */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+  letter-spacing: 1.5px;
+}
+
+/* Form and admin container */
+.form-section, .admin-section {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 25px 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(46, 125, 50, 0.15);
+}
+
+/* Inputs, selects, textareas, buttons */
+input, select, textarea, button {
+  display: block;
+  width: 100%;
+  margin: 12px 0;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1.8px solid #98c1d9;
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+/* Focus effect on inputs */
+input:focus, select:focus, textarea:focus {
+  border-color: #2f855a;
+  outline: none;
+  box-shadow: 0 0 8px rgba(47, 133, 90, 0.5);
+}
+
+/* Button styles */
+button {
+  background: #2f855a;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  color:
